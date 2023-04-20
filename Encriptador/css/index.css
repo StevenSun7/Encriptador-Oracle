@@ -63,6 +63,7 @@
     padding-top: 4%;
     margin-bottom: 6%;
     caret-color: rgb(4, 144, 29);
+    text-transform: uppercase;
 }
 
 .dir-botones {
@@ -73,12 +74,40 @@
     margin-top: 15%;
 }
 
-.botones-E-D {
+.botones-E {
     display: flex;
     display: inline;
     width: 40%;
     height: 65%;
+    border-color: rgba(5, 142, 19, 0.635);
     border-radius: 7px;
+    background-color: rgba(23, 25, 23, 0.808);
+    color: rgb(213, 243, 114);
+    font-size: larger;
+    cursor:pointer;
+}
+
+.botones-E:hover{
+    background:  rgba(5, 142, 19, 0.635);
+    transition: all 0.5s;
+}
+
+.botones-D {
+    display: flex;
+    display: inline;
+    width: 40%;
+    height: 65%;
+    border-color: rgba(5, 142, 19, 0.635);;
+    border-radius: 7px;
+    background-color: rgba(23, 25, 23, 0.808);
+    color: rgb(228, 15, 54);
+    font-size: larger;
+    cursor:pointer;
+}
+
+.botones-D:hover{
+    background:  rgba(5, 142, 19, 0.635);
+    transition: all 0.5s;
 }
 
 .dir-desencriptador {
@@ -88,7 +117,8 @@
 }
 
 .Área-Traducción {
-    background-image: url(/img/Codigo.mp4);
+    /* background-image: url(/img/Codigo.mp4); */
+    background-color: rgba(5, 142, 19, 0.278);
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
     font-size: larger;
@@ -106,7 +136,17 @@
     display: inline;
     width: 55%;
     height: 10%;
+    border-color: rgba(5, 142, 19, 0.635);;
     border-radius: 7px;
+    background-color: rgba(23, 25, 23, 0.808);
+    color: rgb(195, 237, 58);
+    font-size: larger;
+    cursor:pointer;
+}
+
+.boton-copiar:hover{
+    background:  rgba(5, 142, 19, 0.635);
+    transition: all 0.5s;
 }
 
 .footer {
@@ -120,4 +160,48 @@
     display: flex;
     color: aliceblue;
     align-items: center;
+    font-size: large;
+}
+
+/******* Respoinsive Tablet 768 *******/
+@media screen and (max-width:768px) {
+
+    .contenedor {
+        grid-template-areas: 'header'
+                                'main'
+                            'footer';
+    }
+
+    .main {
+    display: grid;
+        grid-template-columns: 1 ;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .formulario {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    }
+
+    .dir-botones {
+        margin: auto;
+        margin-bottom: 10%;
+        padding-bottom: 15%;
+    }
+
+    .dir-desencriptador {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        margin: auto;
+        }
+
+}
+
+
+
+
+
+/******* Respoinsive Movil 320 *******/
+@media screen and (max-width:320px){
+    
 }
