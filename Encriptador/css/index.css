@@ -31,8 +31,8 @@
 
 .logoA {
     display: flex;
-    width: 125%;
-    align-content: center;
+    width: 45%;
+    margin: auto;
 }
 
 .header {
@@ -55,7 +55,7 @@
 .Ingresar-Texto {
     background-color: rgba(23, 25, 23, 0.808);
     border-radius: 7px;
-    border: solid  rgba(5, 142, 19, 0.335);
+    border: solid  rgba(5, 142, 19, 0.635);
     font-size: larger;
     color: rgb(240, 255, 241);
     display: flex;
@@ -88,9 +88,9 @@
 }
 
 .Área-Traducción {
-    background-color: rgba(23, 25, 23, 0.808);
+    background-image: url(/img/Codigo.mp4);
     border-radius: 7px;
-    border: solid  rgba(5, 142, 19, 0.335);
+    border: solid  rgba(5, 142, 19, 0.635);
     font-size: larger;
     color: aliceblue;
     display: flex;
