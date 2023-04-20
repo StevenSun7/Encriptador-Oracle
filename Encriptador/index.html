@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Encriptador de Código</title>
+</head>
+<body class="body">
+    <dir class="contenedor">
+        <header class="header">
+            <dir class="dir-logo">
+                <h1><img src="/img/Alura.png" alt="Logo-Arula" class="logoA"></h1>
+            </dir>
+        </header>
+        <main class="main">
+            <form class="formulario">
+                <dir class="dir-ingreso-texto">
+                    <textarea cols="40" rows="12" id="mensaje" uppercase class="Ingresar-Texto" required placeholder="Ingrese mensaje."></textarea>
+                </dir>
+                <dir class="dir-botones">
+                <input type="submit" value="Encriptar" class="botones-E-D">
+                <input type="submit" value="Desencriptar" class="botones-E-D">
+                </dir>
+            </form>
+            <dir class="dir-desencriptador">
+                <textarea cols="30" rows="20" id="mensaje" class="Área-Traducción" required></textarea>
+                <input type="submit" value="Copiar" class="boton-copiar">
+            </dir>
+        </main>
+
+        <footer class="footer">
+            <p class="copyright">&copy Copyright Steven | Abril 2023  V 0.1</p>
+        </footer>
+    </dir>
+    <script src="js/index.js"></script>
+</body>
+</html>
