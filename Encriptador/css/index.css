@@ -6,7 +6,7 @@
 }
 
 .body {
-    background-image: url(/img/Matrix\ Código\ II.mov);
+    background-image: url(/img/Matrix\ Código\ II.mp4);
     background-size: 100%;
 }
 
@@ -66,6 +66,11 @@
     text-transform: uppercase;
 }
 
+.info {
+    font-size: large;
+    color: rgb(179, 218, 40);
+}
+
 .dir-botones {
     display: flex;
     width: 100%;
@@ -117,8 +122,7 @@
 }
 
 .Área-Traducción {
-    /* background-image: url(/img/Codigo.mp4); */
-    background-color: rgba(5, 142, 19, 0.278);
+    background-image: url(/img/Codigo.mp4);
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
     font-size: larger;
@@ -164,7 +168,7 @@
 }
 
 /******* Respoinsive Tablet 768 *******/
-@media screen and (max-width:768px) {
+@media screen and (min-width:684px) and (max-width:968px) {
 
     .contenedor {
         grid-template-areas: 'header'
@@ -172,36 +176,121 @@
                             'footer';
     }
 
+    .body {
+        background-image: url(/img/Matrix\ 1.jpg)
+    }
+
     .main {
-    display: grid;
-        grid-template-columns: 1 ;
-        grid-template-rows: repeat(2, auto);
-    }
-
-    .formulario {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    }
-
-    .dir-botones {
-        margin: auto;
-        margin-bottom: 10%;
-        padding-bottom: 15%;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .dir-desencriptador {
-        grid-column: 1 / -1;
-        grid-row: 2 / 3;
-        margin: auto;
+        margin-bottom: 6%;
         }
+
+    .Área-Traducción {
+        width: 650px;
+        height: 300px;
+    }
+
+    .boton-copiar {
+        width: 30%;
+        height: 12%;
+    }
+
+    .Ingresar-Texto {
+        width: 600px;
+        height: 290px;
+    }
+
+    .info {
+        margin-bottom: 36px;
+    }
+
+    .dir-botones {
+        align-content: center;
+        margin-top: 0%;
+        width: 50%;
+        height: 15%;
+    }
+
+    .botones-E {
+        width: 240%;
+        height: 165%;
+    }
+
+    .botones-D {
+        width: 240%;
+        height: 165%;
+    }
+
+    .footer {
+        margin-top: 10%;
+    }
 
 }
 
-
-
-
-
 /******* Respoinsive Movil 320 *******/
-@media screen and (max-width:320px){
-    
+@media screen and (min-width:277px) and (max-width:683px){
+
+    .contenedor {
+        grid-template-areas: 'header'
+                                'main'
+                            'footer';
+    }
+
+    .body {
+        background-image: url(/img/Matrix\ 1.jpg)
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .dir-desencriptador {
+        margin-bottom: 6%;
+        }
+
+    .Área-Traducción {
+        width: 450px;
+        height: 200px;
+    }
+
+    .boton-copiar {
+        width: 30%;
+        height: 12%;
+    }
+
+    .Ingresar-Texto {
+        width: 400px;
+        height: 190px;
+    }
+
+    .info {
+        margin-bottom: 36px;
+    }
+
+    .dir-botones {
+        align-content: center;
+        margin-top: 0%;
+        width: 80%;
+        height: 15%;
+    }
+
+    .botones-E {
+        width: 240%;
+        height: 125%;
+    }
+
+    .botones-D {
+        width: 240%;
+        height: 125%;
+    }
+
+    .footer {
+        margin-top: 10%;
+    }
+
 }
