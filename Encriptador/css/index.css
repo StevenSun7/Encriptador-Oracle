@@ -6,7 +6,7 @@
 }
 
 .body {
-    background-image: url(/Encriptador-Oracle/Encriptador/img/Matrix\ Código\ II.mp4);
+    background-image: url(/img/Matrix\ Código\ II.mp4);
     background-size: 100%;
 }
 
@@ -87,7 +87,7 @@
     border-color: rgba(5, 142, 19, 0.635);
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
-    color: rgb(213, 243, 114);
+    color: rgb(220, 228, 72);
     font-size: larger;
     cursor:pointer;
 }
@@ -123,18 +123,17 @@
 
 .Área-Traducción {
     background-color: rgba(23, 25, 23, 0.808);
-    background-image: url(/Encriptador-Oracle/Encriptador/img/Codigo.mp4);
+    background-image: url(/img/Codigo.mp4);
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
     font-size: larger;
-    color: aliceblue;
     display: flex;
     text-align: center;
     padding-top: 10%;
     margin-bottom: 6%;
     text-transform: uppercase;
     caret-color: rgb(4, 144, 29);
-    color: rgb(228, 15, 54);
+    color: rgb(255, 255, 255);
     font-size: larger;
     
 }
@@ -147,7 +146,7 @@
     border-color: rgba(5, 142, 19, 0.635);;
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
-    color: rgb(195, 237, 58);
+    color: rgb(220, 228, 72);
     font-size: larger;
     cursor:pointer;
 }
@@ -181,7 +180,7 @@
     }
 
     .body {
-        background-image: url(/Encriptador-Oracle/Encriptador/img/Matrix\ 1.jpg)
+        background-image: url(/img/Matrix\ 1.jpg)
     }
 
     .main {
@@ -245,7 +244,7 @@
     }
 
     .body {
-        background-image: url(/Encriptador-Oracle/Encriptador/img/Matrix\ 1.jpg)
+        background-image: url(/img/Matrix\ 1.jpg)
     }
 
     .main {
