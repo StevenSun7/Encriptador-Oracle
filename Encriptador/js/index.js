@@ -7,7 +7,7 @@ textoEncriptado.disabled = true
 
 accionEncriptar.onclick = function() {
     var textoEncriptado = textoOrigen.value.toLowerCase();
-    let resultadotexto = textoEncriptado.replace (/[aeiou]/, function (letra) { 
+    let resultadotexto = textoEncriptado.replace (/[a,e,i,o,u]/g, function (letra) { 
         switch(letra) {
             case 'a':
                 return "ai"
@@ -22,14 +22,14 @@ accionEncriptar.onclick = function() {
             default:
                 break;
         }
-    })        
+    }) 
     document.getElementById("devolucion-mensaje").value = resultadotexto;
     document.getElementById("mensaje-ingresado").value = "";
 };
 
 accionDesencriptar.onclick = function() {
     var textoEncriptado = textoOrigen.value.toLowerCase();
-    let resultadotexto = textoEncriptado.replace(/(ai|enter|imes|ober|ufat)/, function (letra) { 
+    let resultadotexto = textoEncriptado.replace(/(ai|enter|imes|ober|ufat)/g, function (letra) { 
         switch(letra) {
             case 'ai':
                 return "a"
@@ -52,6 +52,4 @@ accionDesencriptar.onclick = function() {
 accionCopiar.onclick = function () {
     var copiarEncriptado = document.getElementById("devolucion-mensaje").value
     navigator.clipboard.writeText(copiarEncriptado);
-    document.getElementById("mensaje-ingresado").value = copiarEncriptado
-    document.getElementById("devolucion-mensaje").value = "";
 }

@@ -6,7 +6,7 @@
 }
 
 .body {
-    background-image: url(/img/Matrix\ Código\ II.mp4);
+    background-image: url(/img/Pasillo\ Matrix.mp4);
     background-size: 100%;
 }
 
@@ -68,7 +68,7 @@
 
 .info {
     font-size: large;
-    color: rgb(179, 218, 40);
+    color: rgb(220, 228, 72);
 }
 
 .dir-botones {
@@ -83,7 +83,7 @@
     display: flex;
     display: inline;
     width: 40%;
-    height: 65%;
+    height: 55%;
     border-color: rgba(5, 142, 19, 0.635);
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
@@ -101,7 +101,7 @@
     display: flex;
     display: inline;
     width: 40%;
-    height: 65%;
+    height: 55%;
     border-color: rgba(5, 142, 19, 0.635);;
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
@@ -122,8 +122,8 @@
 }
 
 .Área-Traducción {
-    background-color: rgba(23, 25, 23, 0.808);
-    background-image: url(/img/Codigo.mp4);
+    background-image: url(/img/Matrix\ Código\ II.mp4);
+    background-size: 210%;
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
     font-size: larger;
@@ -133,16 +133,16 @@
     margin-bottom: 6%;
     text-transform: uppercase;
     caret-color: rgb(4, 144, 29);
-    color: rgb(255, 255, 255);
-    font-size: larger;
-    
+    color: rgb(220, 228, 72);
+    font-size: x-large;
+
 }
 
 .boton-copiar {
     display: flex;
     display: inline;
     width: 55%;
-    height: 10%;
+    height: 8%;
     border-color: rgba(5, 142, 19, 0.635);;
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
@@ -215,7 +215,7 @@
         align-content: center;
         margin-top: 0%;
         width: 50%;
-        height: 15%;
+        height: 65%;
     }
 
     .botones-E {
@@ -244,7 +244,7 @@
     }
 
     .body {
-        background-image: url(/img/Matrix\ 1.jpg)
+        background-image: url(/img/Matrix\ 1.jpg);
     }
 
     .main {
@@ -259,11 +259,12 @@
     .Área-Traducción {
         width: 450px;
         height: 200px;
+        background-image: url(/img/Codigo.mp4);
     }
 
     .boton-copiar {
-        width: 30%;
-        height: 12%;
+        width: 40%;
+        height: 17%;
     }
 
     .Ingresar-Texto {
@@ -276,20 +277,24 @@
     }
 
     .dir-botones {
-        align-content: center;
-        margin-top: 0%;
-        width: 80%;
-        height: 15%;
+        flex-direction: column;
+        width: 120%;
+        height: 225%;
+        margin: 0%;
+        align-items: center;
+        justify-items: baseline;
     }
 
     .botones-E {
-        width: 240%;
-        height: 125%;
+        width: 34%;
+        height: 40px;
+        margin: 5px;
     }
 
     .botones-D {
-        width: 240%;
-        height: 125%;
+        width: 34%;
+        height: 40px;
+        margin: 5px;
     }
 
     .footer {
