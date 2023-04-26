@@ -161,6 +161,7 @@
     background-color: rgba(5, 142, 19, 0.335);
     height: 50px;
     justify-content: center;
+    width: 100%;
 }
 
 .copyright {
