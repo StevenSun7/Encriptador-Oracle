@@ -133,9 +133,13 @@
     margin-bottom: 6%;
     text-transform: uppercase;
     caret-color: rgb(4, 144, 29);
-    color: rgb(220, 228, 72);
+    color: rgb(246, 255, 83);
     font-size: x-large;
+}
 
+.cambiarBackground{
+    background-image: none;
+    background-color: rgba(53, 56, 53, 0.808);
 }
 
 .boton-copiar {
