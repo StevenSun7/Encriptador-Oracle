@@ -5,6 +5,8 @@ var accionDesencriptar = document.querySelector("#desencriptar");
 var accionCopiar = document.querySelector("#copiar")
 textoEncriptado.disabled = true
 
+
+
 accionEncriptar.onclick = function() {
     var textoEncriptado = textoOrigen.value.toLowerCase();
     let resultadotexto = textoEncriptado.replace (/[a,e,i,o,u]/g, function (letra) { 
