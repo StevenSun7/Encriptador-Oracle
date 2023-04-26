@@ -131,15 +131,15 @@
     text-align: center;
     padding-top: 10%;
     margin-bottom: 6%;
-    text-transform: uppercase;
     caret-color: rgb(4, 144, 29);
     color: rgb(246, 255, 83);
     font-size: x-large;
+    text-transform: uppercase;
 }
 
 .cambiarBackground{
     background-image: none;
-    background-color: rgba(53, 56, 53, 0.808);
+    background-color: rgba(23, 25, 23, 0.808);
 }
 
 .boton-copiar {
@@ -250,6 +250,7 @@
 
     .body {
         background-image: url(/img/Matrix\ 1.jpg);
+        background-size: 100%;
     }
 
     .main {
@@ -265,6 +266,11 @@
         width: 450px;
         height: 200px;
         background-image: url(/img/Codigo.mp4);
+    }
+
+    .cambiarBackground{
+        background-image: none;
+        background-color: rgba(23, 25, 23, 0.808);
     }
 
     .boton-copiar {
