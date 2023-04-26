@@ -27,6 +27,16 @@ accionEncriptar.onclick = function() {
     document.getElementById("mensaje-ingresado").value = "";
 };
 
+function eliminarAcentos(texto) {
+    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+var textarea = document.querySelector('textarea');
+textarea.addEventListener('input', function(event) {
+    var textoSinAcentos = eliminarAcentos(event.target.value);
+    event.target.value = textoSinAcentos;
+});
+
+
 accionDesencriptar.onclick = function() {
     var textoEncriptado = textoOrigen.value.toLowerCase();
     let resultadotexto = textoEncriptado.replace(/(ai|enter|imes|ober|ufat)/g, function (letra) { 
