@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.Ingresar-Texto {
+.ingresar-texto {
     background-color: rgba(23, 25, 23, 0.808);
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
@@ -121,7 +121,7 @@
     align-items: center;
 }
 
-.Área-Traducción {
+.area-traduccion {
     background-image: url(/img/Matrix\ Código\ II.mp4);
     background-size: 210%;
     border-radius: 7px;
@@ -197,7 +197,7 @@
         margin-bottom: 6%;
         }
 
-    .Área-Traducción {
+    .area-traduccion {
         width: 650px;
         height: 300px;
     }
@@ -207,7 +207,7 @@
         height: 12%;
     }
 
-    .Ingresar-Texto {
+    .ingresar-texto {
         width: 600px;
         height: 290px;
     }
@@ -262,7 +262,7 @@
         margin-bottom: 6%;
         }
 
-    .Área-Traducción {
+    .area-traduccion {
         width: 450px;
         height: 200px;
         background-image: url(/img/Codigo.mp4);
@@ -278,7 +278,7 @@
         height: 40px;
     }
 
-    .Ingresar-Texto {
+    .ingresar-texto {
         width: 400px;
         height: 190px;
     }

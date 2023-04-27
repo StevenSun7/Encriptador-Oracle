@@ -1,6 +1,6 @@
 var textoOrigen = document.getElementById("mensaje-ingresado");
 var textoEncriptado = document.getElementById("devolucion-mensaje");
-var background = document.querySelector(".Área-Traducción");
+var background = document.querySelector(".area-traduccion");
 var accionEncriptar = document.querySelector("#encriptar");
 var accionDesencriptar = document.querySelector("#desencriptar");
 var accionCopiar = document.querySelector("#copiar");
