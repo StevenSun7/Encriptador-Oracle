@@ -70,7 +70,7 @@
     background-color: rgba(23, 25, 23, 0.808);
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
-    font-size: larger;
+    font-size: x-large;
     color: rgb(240, 255, 241);
     display: flex;
     text-align: center;
@@ -169,7 +169,7 @@
     padding-top: 10%;
     background-color: rgba(23, 25, 23, 0.106);
     color: rgb(253, 246, 39);
-    font-size: large;
+    font-size: x-large;
     text-transform: uppercase;
 }
 
@@ -198,7 +198,7 @@
     height: 70px;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .copyright {
@@ -266,13 +266,13 @@
 
     .botones-E {
         width: 22%;
-        height: 95%;
+        height: 40px;
         margin-right: 3%;
     }
 
     .botones-D {
         width: 22%;
-        height: 95%;
+        height: 40px;
         margin-left: 3%;
     }
 
