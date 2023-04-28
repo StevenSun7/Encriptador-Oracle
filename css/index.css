@@ -4,9 +4,23 @@
     box-sizing: border-box;
 }
 
-.body {
-    background-image: url(./img/Pasillo-Matrix.webm);
-    background-size: 100%;
+/* Estilos para el contenido del código compartido */
+
+.video-body {
+    position: relative;
+    height: 100%;
+}
+
+.video-body video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-body .end-video-body {
+    position: relative;
+    z-index: 1;
 }
 
 /*-------- Maqueteo GRID --------*/
@@ -83,7 +97,7 @@
     display: flex;
     display: inline;
     width: 40%;
-    height: 55%;
+    height: 50%;
     border-color: rgba(5, 142, 19, 0.635);
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
@@ -101,7 +115,7 @@
     display: flex;
     display: inline;
     width: 40%;
-    height: 55%;
+    height: 50%;
     border-color: rgba(5, 142, 19, 0.635);;
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
@@ -121,32 +135,50 @@
     align-items: center;
 }
 
-.area-traduccion {
-    background-image: url(./img/Matrix-Código-II.webm);
-    background-size: 210%;
+/* Area de Traducción */
+
+.video-areatexto {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-codigo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 3px;
+    border: solid  rgba(5, 142, 19, 0.635);
     border-radius: 7px;
+}
+
+.area-traduccion {
+    position: relative;
+    z-index: 1;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
     border: solid  rgba(5, 142, 19, 0.635);
     font-size: larger;
     display: flex;
     text-align: center;
     padding-top: 10%;
-    margin-bottom: 6%;
-    caret-color: rgb(4, 144, 29);
-    color: rgb(246, 255, 83);
-    font-size: x-large;
+    background-color: rgba(23, 25, 23, 0.106);
+    color: rgb(253, 246, 39);
+    font-size: large;
     text-transform: uppercase;
-}
-
-.cambiarBackground{
-    background-image: none;
-    background-color: rgba(23, 25, 23, 0.808);
 }
 
 .boton-copiar {
     display: flex;
     display: inline;
-    width: 55%;
-    height: 8%;
+    width: 50%;
+    height: 8.5%;
+    margin-top: 10%;
     border-color: rgba(5, 142, 19, 0.635);;
     border-radius: 7px;
     background-color: rgba(23, 25, 23, 0.808);
@@ -163,9 +195,10 @@
 .footer {
     display: flex;
     background-color: rgba(5, 142, 19, 0.335);
-    height: 50px;
+    height: 70px;
     justify-content: center;
     width: 100%;
+    margin-top: 20px;
 }
 
 .copyright {
@@ -184,10 +217,6 @@
                             'footer';
     }
 
-    .body {
-        background-image: url(./img/Matrix-1.jpg)
-    }
-
     .main {
         display: flex;
         flex-direction: column-reverse;
@@ -197,40 +226,54 @@
         margin-bottom: 6%;
         }
 
+    .video-areatexto {
+        width: 80%;
+        height: 74%;
+    }
+
     .area-traduccion {
-        width: 650px;
-        height: 300px;
+        width: 100%;
+        height: 100%;
+        padding-top: 3%;
     }
 
     .boton-copiar {
-        width: 30%;
-        height: 12%;
+        width: 20%;
+        margin-top: 5%;
+    }
+
+    .dir-ingreso-texto {
+        width: 75%;
+        height: 80%;
     }
 
     .ingresar-texto {
-        width: 600px;
-        height: 290px;
+        width: 100%;
+        height: 100%;
     }
 
     .info {
-        margin-bottom: 36px;
+        margin: 1%;
     }
 
     .dir-botones {
         align-content: center;
         margin-top: 0%;
-        width: 50%;
-        height: 65%;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
     }
 
     .botones-E {
-        width: 240%;
-        height: 165%;
+        width: 22%;
+        height: 95%;
+        margin-right: 3%;
     }
 
     .botones-D {
-        width: 240%;
-        height: 165%;
+        width: 22%;
+        height: 95%;
+        margin-left: 3%;
     }
 
     .footer {
@@ -242,47 +285,52 @@
 /******* Respoinsive Movil 320 *******/
 @media screen and (min-width:277px) and (max-width:683px){
 
-    .contenedor {
-        grid-template-areas: 'header'
-                                'main'
-                            'footer';
-    }
-
     .body {
         background-image: url(./img/Matrix-1.jpg);
         background-size: 100%;
+        object-fit: cover;
     }
 
     .main {
         flex-direction: column-reverse;
         align-content: center;
+        align-items: center;
     }
 
     .dir-desencriptador {
         margin-bottom: 6%;
-        }
-
-        .for
-
-    .area-traduccion {
         width: 90%;
         height: 45%;
-        background-image: url(./img/Codigo.webm);
+        margin: none;
+        }
+
+    .video-codigo {
+        padding-right: 4px;
+        object-fit: cover;
     }
 
-    .cambiarBackground{
-        background-image: none;
-        background-color: rgba(23, 25, 23, 0.808);
+    .area-traduccion {
+        width: 100%;
+        height: 100%;
     }
 
     .boton-copiar {
         width: 40%;
-        height: 40px;
+        height: 11%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .dir-ingreso-texto {
+        width: 100%;
     }
 
     .ingresar-texto {
         width: 90%;
-        height: 65%;
+        height: 85%;
+        margin: auto;
     }
 
     .info {
@@ -292,22 +340,18 @@
 
     .dir-botones {
         flex-direction: column;
-        width: 120%;
-        height: 225%;
         align-items: center;
-        justify-items: baseline;
+        margin-top: 2%;
     }
 
     .botones-E {
         width: 34%;
-        height: 40px;
-        margin: 5px;
+        height: 45%;
     }
 
     .botones-D {
         width: 34%;
-        height: 40px;
-        margin: 5px;
+        height: 45%;
     }
 
     .footer {

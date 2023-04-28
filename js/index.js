@@ -1,6 +1,6 @@
 var textoOrigen = document.getElementById("mensaje-ingresado");
 var textoEncriptado = document.getElementById("devolucion-mensaje");
-var background = document.querySelector(".area-traduccion");
+var background = document.querySelector(".video-areatexto");
 var accionEncriptar = document.querySelector("#encriptar");
 var accionDesencriptar = document.querySelector("#desencriptar");
 var accionCopiar = document.querySelector("#copiar");
@@ -10,8 +10,8 @@ accionEncriptar.onclick = function() {
     ocultarBackground();
     var textoEncriptado = textoOrigen.value.toLowerCase();
     if (textoEncriptado === "") {
-        background.classList.remove("cambiarBackground");
-        textoEncriptado.classList.remove("cambiarBackground");
+        background.classList.remove(".cambiarVideo-codigo");
+        textoEncriptado.classList.remove(".cambiarVideo-codigo");
         return;
     }
     let resultadotexto = textoEncriptado.replace(/[aeiou]/g, function(letra) {
@@ -35,8 +35,8 @@ accionEncriptar.onclick = function() {
 };
 
 function ocultarBackground() {
-    background.classList.add("cambiarBackground");
-    textoEncriptado.classList.add("cambiarBackground");
+    background.classList.add(".cambiarVideo-codigo");
+    textoEncriptado.classList.add(".cambiarVideo-codigo");
 }
 
 
@@ -55,8 +55,8 @@ accionDesencriptar.onclick = function() {
     ocultarBackground();
     var textoEncriptado = textoOrigen.value.toLowerCase();
     if (textoEncriptado === "") {
-        background.classList.remove("cambiarBackground");
-        textoEncriptado.classList.remove("cambiarBackground");
+        background.classList.remove(".cambiarVideo-codigo");
+        textoEncriptado.classList.remove(".video-areatexto");
         return;
     }
     let resultadotexto = textoEncriptado.replace(/(ai|enter|imes|ober|ufat)/g, function(letra) {

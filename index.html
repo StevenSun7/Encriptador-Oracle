@@ -4,38 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="./favicon/Favicon Alura.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/favicon/Favicon Alura.svg" type="image/x-icon">
     <title>Encriptador de Código</title>
 </head>
 <body class="body">
-    <div class="contenedor">
-        <header class="header">
-            <div class="dir-logo">
-                <h1><img src="./img/Img Alura Blanco.png" alt="Logo-Arula" class="logoA"></h1>
+    <div class="video-body">
+        <video autoplay loop muted playsinline class="videofondo">
+            <source src="/img/Pasillo-Matrix.mp4" type="video/mp4">
+        </video>
+        <div class="end-video-body">
+            <div class="contenedor">
+                <header class="header">
+                    <div class="dir-logo">
+                        <h1><img src="/img/Img-Alura-Blanco.png" alt="Logo-Arula" class="logoA"></h1>
+                    </div>
+                </header>
+                <main class="main">
+                    <form class="formulario">
+                        <div class="dir-ingreso-texto">
+                            <textarea cols="40" rows="12" id="mensaje-ingresado" class="ingresar-texto" required placeholder="Ingrese texto."></textarea>
+                        </div>
+                        <i class="info">Al ingresar texto cambiará automáticamente a mayúscula.</i>
+                        <div class="dir-botones">
+                        <input type="submit" value="Encriptar" id=encriptar class="botones-E">
+                        <input type="submit" value="Desencriptar" id=desencriptar class="botones-D">
+                        </div>
+                    </form>
+                    <div class="dir-desencriptador" id="devolucion">
+                        <div class="video-areatexto">
+                            <video autoplay loop muted playsinline class="video-codigo">
+                                <source src="/img/Matrix-Código-II.mp4" type="video/mp4">
+                            </video>
+                            <textarea cols="38" rows="20" id="devolucion-mensaje" class="area-traduccion" required placeholder="No hay texto codificado."></textarea>
+                            <div class="end-video-areatexto">
+                            </div>
+                        </div>
+                        <input type="submit" value="Copiar" id=copiar class="boton-copiar">
+                    </div>
+                </main>
+                <footer class="footer">
+                    <p class="copyright">&copy Copyright Steven | Abril 2023  V 0.1</p>
+                </footer>
             </div>
-        </header>
-        <main class="main">
-            <form class="formulario">
-                <div class="dir-ingreso-texto">
-                    <textarea cols="40" rows="12" id="mensaje-ingresado" class="ingresar-texto" required placeholder="Ingrese texto."></textarea>
-                </div>
-                <i class="info">Al ingresar texto cambiará automáticamente a mayúscula.</i>
-                <div class="dir-botones">
-                <input type="submit" value="Encriptar" id=encriptar class="botones-E">
-                <input type="submit" value="Desencriptar" id=desencriptar class="botones-D">
-                </div>
-            </form>
-            <div class="dir-desencriptador" id="devolucion">
-                <textarea cols="26" rows="15" id="devolucion-mensaje" class="area-traduccion" required placeholder="No hay texto codificado."></textarea>
-                <input type="submit" value="Copiar" id=copiar class="boton-copiar">
-            </div>
-        </main>
-
-        <footer class="footer">
-            <p class="copyright">&copy Copyright Steven | Abril 2023  V 0.1</p>
-        </footer>
+        </div>
     </div>
-    <script src="./js/index.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
