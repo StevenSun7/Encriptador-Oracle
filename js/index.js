@@ -9,11 +9,11 @@ textoEncriptado.disabled = true;
 accionEncriptar.onclick = function() {
     ocultarBackground();
     var textoEncriptado = textoOrigen.value.toLowerCase();
-    if (textoEncriptado === "") {
-        background.classList.remove(".cambiarVideo-codigo");
-        textoEncriptado.classList.remove(".cambiarVideo-codigo");
-        return;
-    }
+    // if (textoEncriptado === "") {
+    //     background.classList.remove(".cambiarVideo-codigo");
+    //     textoEncriptado.classList.remove(".cambiarVideo-codigo");
+    //     return;
+    // }
     let resultadotexto = textoEncriptado.replace(/[aeiou]/g, function(letra) {
         switch (letra) {
             case "a":
@@ -54,11 +54,11 @@ textarea.addEventListener("input", function(event) {
 accionDesencriptar.onclick = function() {
     ocultarBackground();
     var textoEncriptado = textoOrigen.value.toLowerCase();
-    if (textoEncriptado === "") {
-        background.classList.remove(".cambiarVideo-codigo");
-        textoEncriptado.classList.remove(".video-areatexto");
-        return;
-    }
+    // if (textoEncriptado === "") {
+    //     background.classList.remove(".cambiarVideo-codigo");
+    //     textoEncriptado.classList.remove(".cambiarVideo-codigo");
+    //     return;
+    // }
     let resultadotexto = textoEncriptado.replace(/(ai|enter|imes|ober|ufat)/g, function(letra) {
         switch (letra) {
             case "ai":
