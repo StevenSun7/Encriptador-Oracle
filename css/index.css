@@ -1,12 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
 .body {
-    background-image: url(/img/Pasillo\ Matrix.mp4);
+    background-image: url(/img/Pasillo\ Matrix.webm);
     background-size: 100%;
 }
 
@@ -17,10 +16,11 @@
 
 .contenedor {
     display: grid;
-    gap: 10px;
     grid-template-areas: 'header header'
                             'main main'
                         'footer footer';
+    gap: 10px;
+    width: 100%;
 }
 
 .dir-logo {
@@ -122,7 +122,7 @@
 }
 
 .area-traduccion {
-    background-image: url(/img/Matrix\ Código\ II.mp4);
+    background-image: url(/img/Matrix-Código-II.webm);
     background-size: 210%;
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
@@ -254,18 +254,20 @@
     }
 
     .main {
-        display: flex;
         flex-direction: column-reverse;
+        align-content: center;
     }
 
     .dir-desencriptador {
         margin-bottom: 6%;
         }
 
+        .for
+
     .area-traduccion {
-        width: 450px;
-        height: 200px;
-        background-image: url(/img/Codigo.mp4);
+        width: 90%;
+        height: 45%;
+        background-image: url(/img/Codigo.webm);
     }
 
     .cambiarBackground{
@@ -279,19 +281,19 @@
     }
 
     .ingresar-texto {
-        width: 400px;
-        height: 190px;
+        width: 90%;
+        height: 65%;
     }
 
     .info {
-        margin-bottom: 36px;
+        display: flex;
+        text-align: center;
     }
 
     .dir-botones {
         flex-direction: column;
         width: 120%;
         height: 225%;
-        margin: 0%;
         align-items: center;
         justify-items: baseline;
     }
