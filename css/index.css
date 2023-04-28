@@ -283,7 +283,7 @@
 }
 
 /******* Respoinsive Movil 320 *******/
-@media screen and (min-width:277px) and (max-width:683px){
+@media screen and (min-width:200px) and (max-width:683px){
 
     .body {
         background-image: url(./img/Matrix-1.jpg);
@@ -298,10 +298,9 @@
     }
 
     .dir-desencriptador {
-        margin-bottom: 6%;
         width: 90%;
         height: 30%;
-        margin: none;
+        margin-top: 13%;
         }
 
     .video-codigo {
@@ -314,8 +313,8 @@
     }
 
     .boton-copiar {
-        width: 40%;
-        height: 11%;
+        width: 38%;
+        height: 12%;
         text-align: center;
     }
 
@@ -333,6 +332,7 @@
         width: 90%;
         height: 85%;
         margin-bottom: 0%;
+        margin-left: 5%;
     }
 
     .info {
@@ -344,18 +344,19 @@
         flex-direction: column;
         align-items: center;
         margin-top: 2%;
+        justify-items: center;
     }
 
     .botones-E {
         width: 34%;
-        height: 250px;
+        height: 190px;
         margin: 3%;
         text-align: center;
     }
 
     .botones-D {
         width: 34%;
-        height: 250px;
+        height: 190px;
         text-align: center;
     }
 }
