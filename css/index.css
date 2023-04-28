@@ -156,6 +156,11 @@
     border-radius: 7px;
 }
 
+.video-areatexto .end-video-areatexto {
+    position: relative;
+    z-index: 1;
+}
+
 .area-traduccion {
     position: relative;
     z-index: 1;
@@ -291,7 +296,7 @@
     }
 
     .body {
-        background-image: url(./img/Matrix-1.jpg);
+        background-image: url(/img/Matrix-1.jpg);
         background-size: contain;
         background-position: center center;
     }
