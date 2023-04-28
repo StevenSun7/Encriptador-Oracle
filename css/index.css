@@ -298,15 +298,15 @@
 /******* Respoinsive Movil 200 *******/
 @media screen and (min-width:200px) and (max-width:683px){
 
+    .body {
+        background-image: url(./img/fondo.jpg);
+        background-size: contain;
+        background-position: center center;
+    }
+    
     .videofondo {
         display: none;
         
-    }
-
-    .body {
-        background-image: url(./img/matrix.jpg);
-        background-size: contain;
-        background-position: center center;
     }
 
     .main {
