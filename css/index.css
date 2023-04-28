@@ -6,7 +6,7 @@
 }
 
 .body {
-    background-image: url(./img/Pasillo\Matrix.mp4);
+    background-image: url(/img/Pasillo\ Matrix.mp4);
     background-size: 100%;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .area-traduccion {
-    background-image: url(./img/Matrix\Código\II.mp4);
+    background-image: url(/img/Matrix\ Código\ II.mp4);
     background-size: 210%;
     border-radius: 7px;
     border: solid  rgba(5, 142, 19, 0.635);
@@ -185,7 +185,7 @@
     }
 
     .body {
-        background-image: url(./img/Matrix\1.jpg)
+        background-image: url(/img/Matrix\ 1.jpg)
     }
 
     .main {
@@ -249,7 +249,7 @@
     }
 
     .body {
-        background-image: url(./img/Matrix\1.jpg);
+        background-image: url(/img/Matrix\ 1.jpg);
         background-size: 100%;
     }
 
@@ -265,7 +265,7 @@
     .area-traduccion {
         width: 450px;
         height: 200px;
-        background-image: url(./img/Codigo.mp4);
+        background-image: url(/img/Codigo.mp4);
     }
 
     .cambiarBackground{
