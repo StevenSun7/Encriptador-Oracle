@@ -300,12 +300,11 @@
     .dir-desencriptador {
         margin-bottom: 6%;
         width: 90%;
-        height: 45%;
+        height: 30%;
         margin: none;
         }
 
     .video-codigo {
-        padding-right: 4px;
         object-fit: cover;
     }
 
@@ -317,10 +316,13 @@
     .boton-copiar {
         width: 40%;
         height: 11%;
+        text-align: center;
     }
 
     .formulario {
         width: 100%;
+        justify-content: center;
+        align-content: center;
     }
 
     .dir-ingreso-texto {
@@ -330,7 +332,7 @@
     .ingresar-texto {
         width: 90%;
         height: 85%;
-        margin: auto;
+        margin-bottom: 0%;
     }
 
     .info {
@@ -346,16 +348,14 @@
 
     .botones-E {
         width: 34%;
-        height: 45%;
+        height: 250px;
+        margin: 3%;
+        text-align: center;
     }
 
     .botones-D {
         width: 34%;
-        height: 45%;
+        height: 250px;
+        text-align: center;
     }
-
-    .footer {
-        margin-top: 10%;
-    }
-
 }
