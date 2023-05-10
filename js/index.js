@@ -1,19 +1,12 @@
 var textoOrigen = document.getElementById("mensaje-ingresado");
 var textoEncriptado = document.getElementById("devolucion-mensaje");
-var background = document.querySelector(".video-areatexto");
 var accionEncriptar = document.querySelector("#encriptar");
 var accionDesencriptar = document.querySelector("#desencriptar");
 var accionCopiar = document.querySelector("#copiar");
 textoEncriptado.disabled = true;
 
 accionEncriptar.onclick = function() {
-    ocultarBackground();
     var textoEncriptado = textoOrigen.value.toLowerCase();
-    // if (textoEncriptado === "") {
-    //     background.classList.remove(".cambiarVideo-codigo");
-    //     textoEncriptado.classList.remove(".cambiarVideo-codigo");
-    //     return;
-    // }
     let resultadotexto = textoEncriptado.replace(/[aeiou]/g, function(letra) {
         switch (letra) {
             case "a":
@@ -34,12 +27,6 @@ accionEncriptar.onclick = function() {
     textoOrigen.value = "";
 };
 
-function ocultarBackground() {
-    background.classList.add(".cambiarVideo-codigo");
-    textoEncriptado.classList.add(".cambiarVideo-codigo");
-}
-
-
 function eliminarAcentos(texto) {
     return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
@@ -52,13 +39,7 @@ textarea.addEventListener("input", function(event) {
 
 
 accionDesencriptar.onclick = function() {
-    ocultarBackground();
     var textoEncriptado = textoOrigen.value.toLowerCase();
-    // if (textoEncriptado === "") {
-    //     background.classList.remove(".cambiarVideo-codigo");
-    //     textoEncriptado.classList.remove(".cambiarVideo-codigo");
-    //     return;
-    // }
     let resultadotexto = textoEncriptado.replace(/(ai|enter|imes|ober|ufat)/g, function(letra) {
         switch (letra) {
             case "ai":
