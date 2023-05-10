@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilos para el contenido del código compartido */
@@ -100,7 +101,7 @@
     margin-top: 15%;
 }
 
-.botones-E {
+.boton-E {
     display: flex;
     display: inline;
     width: 40%;
@@ -113,12 +114,12 @@
     cursor:pointer;
 }
 
-.botones-E:hover{
+.boton-E:hover{
     background:  rgba(5, 142, 19, 0.635);
     transition: all 0.5s;
 }
 
-.botones-D {
+.boton-D {
     display: flex;
     display: inline;
     width: 40%;
@@ -131,7 +132,7 @@
     cursor:pointer;
 }
 
-.botones-D:hover{
+.boton-D:hover{
     background:  rgba(5, 142, 19, 0.635);
     transition: all 0.5s;
 }
@@ -158,13 +159,6 @@
     object-fit: cover;
     border: solid  rgba(5, 142, 19, 0.635);
     border-radius: 7px;
-}
-
-.cambiarVideo-codigo {
-    display: none;
-    background-image: url(./img/matrixcodigo.mp4);
-    background-size: contain;
-    background-position: center center;
 }
 
 .video-areatexto .end-video-areatexto {
@@ -279,13 +273,13 @@
         justify-content: center;
     }
 
-    .botones-E {
+    .boton-E {
         width: 22%;
         height: 40px;
         margin-right: 3%;
     }
 
-    .botones-D {
+    .boton-D {
         width: 22%;
         height: 40px;
         margin-left: 3%;
@@ -329,7 +323,7 @@
     }
 
     .boton-copiar {
-        width: 38%;
+        width: 40%;
         height: 12%;
         text-align: center;
     }
@@ -363,16 +357,16 @@
         justify-items: center;
     }
 
-    .botones-E {
-        width: 34%;
-        height: 190px;
+    .boton-E {
+        width: 44%;
+        height: 40%;
         margin: 3%;
         text-align: center;
     }
 
-    .botones-D {
-        width: 34%;
-        height: 190px;
+    .boton-D {
+        width: 44%;
+        height: 40%;
         text-align: center;
     }
 }

@@ -25,22 +25,22 @@
                         <div class="dir-ingreso-texto">
                             <textarea cols="33" rows="12" id="mensaje-ingresado" class="ingresar-texto" required placeholder="Ingrese texto."></textarea>
                         </div>
-                        <i class="info">El texto ingresado cambia a minúscula sin acentos.</i>
+                        <i class="info">❕El texto ingresado cambia a minúscula sin acentos.</i>
                         <div class="dir-botones">
-                            <button value="Encriptar" id=encriptar class="botones-E">Encriptar</button>
-                            <button value="Desencriptar" id=desencriptar class="botones-D">Desenpcriptar</button>
+                            <button value="Encriptar" id=encriptar class="boton-E" onclick="botonE()">Encriptar</button>
+                            <button value="Desencriptar" id=desencriptar class="boton-D" onclick="botonD()">Desenpcriptar</button>
                         </div>
                     </form>
                     <div class="dir-desencriptador" id="devolucion">
                         <div class="video-areatexto">
                             <video autoplay loop muted playsinline class="video-codigo">
-                                <source src="./img/matrixcodigo.mp4" type="video/mp4" class="source">
+                                <source src="./img/matrixcodigo.mp4" type="video/mp4">
                             </video>
-                            <textarea cols="30" rows="16" id="devolucion-mensaje" class="area-traduccion" required placeholder="No hay texto codificado."></textarea>
+                            <textarea cols="32" rows="16" id="devolucion-mensaje" class="area-traduccion" required placeholder="No hay texto codificado."></textarea>
                             <div class="end-video-areatexto">
                             </div>
                         </div>
-                        <button value="Copiar" id=copiar class="boton-copiar">Copiar</button>
+                        <button value="Copiar" id=copiar class="boton-copiar" onclick="copiarTexto()">Copiar</button>
                     </div>
                 </main>
                 <footer class="footer">

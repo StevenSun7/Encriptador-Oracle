@@ -64,3 +64,46 @@ accionCopiar.onclick = function() {
     var copiarEncriptado = document.getElementById("devolucion-mensaje").value;
     navigator.clipboard.writeText(copiarEncriptado);
 };
+
+
+// Solucion propuesta por Alura https://www.youtube.com/watch?v=DVjp-TJihAM
+
+// var textoArea = document.querySelector(".ingresar-texto");
+// var mensaje = document.querySelector(".area-traduccion");
+
+// function botonE(){
+//     const textoEncriptado = encriptar(textoArea.value)
+//     mensaje.value = textoEncriptado
+//     textoArea.value = "";
+// }
+
+// function encriptar(stringEncriptado){
+//     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+//     stringEncriptado = stringEncriptado.toLowerCase()
+
+//     for(let i = 0; i < matrizCodigo.length; i++){
+//         if(stringEncriptado.includes(matrizCodigo [i][0])){
+//             stringEncriptado = stringEncriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
+//         }
+//     }
+//     return stringEncriptado
+// }
+
+
+// function botonD(){
+//     const textoEncriptado = desencriptar(textoArea.value)
+//     mensaje.value = textoEncriptado
+//     textoArea.value = "";
+// }
+
+// function desencriptar(stringDesencriptado){
+//     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+//     stringDesencriptado = stringDesencriptado.toLowerCase()
+
+//     for(let i = 0; i < matrizCodigo.length; i++){
+//         if(stringDesencriptado.includes(matrizCodigo [i][1])){
+//             stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
+//         }
+//     }
+//     return stringDesencriptado
+// }
