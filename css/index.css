@@ -299,8 +299,8 @@
 @media screen and (min-width:200px) and (max-width:683px){
 
     .body {
-        background-image: url(./img/fondo.jpg);
-        background-size: contain;
+        background-image: url(/img/fondocel.png);
+        background-size: cover;
         background-position: center center;
     }
     
