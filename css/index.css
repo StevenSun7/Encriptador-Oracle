@@ -436,4 +436,13 @@
         height: 40%;
         text-align: center;
     }
+
+    .icon {
+        margin-top: 7px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
 }
+
